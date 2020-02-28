@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+  <div class="title">
+    <p>
+      <b style="margin-left:370px;">
+        Visual Analytics support Machine Learning for breast cancer classification
+      </b>
+      <h5 style="margin-left:570px; font: 15px serif;">
+        Clustering and Features Selection
+      </h5>
+    </p>
+  </div>
+<table>
+<tr>
+  <td>
+    <div style="font: 25px Verdana;">Amount of variance per individual component</div>
+    <div id="svg"></div>
+  </td>
+  <td>
+    <div style="font: 25px Verdana;">Scatterplot of the selected components</div>
+    <div id="svg2"></div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <div style="font: 25px Verdana ;">Histogram of the two cancers main features</div>
+    <div id="svg3">
+        <div class="control-group">
+            <button onclick="reloadBar('radius')">
+                radius
+            </button>
+            <button onclick="reloadBar('perimeter')">
+                perimeter
+            </button>
+            <button onclick="reloadBar('texture')">
+                texture
+            </button>
+            <button onclick="reloadBar('compactness')">
+                compactness
+            </button>
+            <button onclick="reloadBar('concavity')">
+                concavity
+            </button>
+            <button onclick="reloadBar('area')">
+                area
+            </button>
+            <button onclick="reloadBar('fractal_dim')">
+                fractal_dim
+            </button>
+            <button onclick="reloadBar('concave_pts')">
+                concave_pts
+            </button>
+            <button onclick="reloadBar('clear')">
+                clear
+            </button>
+        </div>
+    </div>
+  </td>
+  <td>
+    <div style="font: 25px Verdana;">Linechart of ratio Malignant/Benign</div>
+    <div id="svg4" style="padding-top: 48px;"></div>
+  </td>
+</tr>
+
+</table>
+
+</body>
+
+<style>
+
+  body
+  {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 960px;
+    font: 10px sans-serif;
+  }
+
+  .axis text
+  {
+    font: 10px sans-serif;
+  }
+
+  #svg4,
+  #svg3,
+  #svg2,
+  #svg
+  {
+    border-style: inset;
+  }
+
+  .axis path,
+  .axis line
+  {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .bar
+  {
+    fill-opacity: .9;
+  }
+  .dot
+  {
+    stroke: #000;
+  }
+
+  .control-group
+  {
+  padding-top: 10px;
+  margin: 10px;
+  }
+
+  .title
+  {
+    background-color:#99cbff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: "Roboto", Times, serif;
+    min-width:1295px;
+    font: 20px serif;
+  }
+
+  .border
+  {
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+  }
+
+  div.tooltip
+  {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+
+</style>
+
+<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+<script src="histogram.js"></script>
+<script src="barchart.js"></script>
+<script src="pca.js"></script>

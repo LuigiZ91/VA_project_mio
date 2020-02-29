@@ -106,7 +106,7 @@
 
 
 
-  d3.tsv("wdbc.tsv", function(error, data3)
+  d3.tsv("data/wdbc.tsv", function(error, data3)
   {
     data3.forEach(function(d)
     {

@@ -242,7 +242,7 @@
 
   function reloadBar(attribute)
   {
-    d3.tsv("wdbc.tsv", function(error, dataNew)
+    d3.tsv("data/wdbc.tsv", function(error, dataNew)
     {
       d3.select("#symmetryM").remove();
       d3.select("#symmetryB").remove();

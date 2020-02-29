@@ -86,7 +86,7 @@
 
 
 
-    d3.tsv("Varianza_componenti_PCA.tsv", function(error, data)
+    d3.tsv(""data/Varianza_componenti_PCA.tsv", function(error, data)
     {
       x.domain(data.map(function(d) { return d.Component; }));
       y.domain([0,1]);
@@ -120,7 +120,7 @@
           .attr("selected",false)
           .on("click", function(d,i)
           {
-            d3.tsv("wdbc.tsv", function (error, dataProva)
+            d3.tsv(""data/wdbc.tsv", function (error, dataProva)
                   {
                       dataProva.forEach(function(d)
                         {

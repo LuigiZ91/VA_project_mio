@@ -1,27 +1,34 @@
-body{
+body
+{
 	background:#C9D6CF;
 }
 
-.svg_area{
+.svg_area
+{
 	background:white;
 }
 
-.red{
+.red
+{
 	fill:red;
 }
 
-.green{
+.green
+{
 	fill:green;
 }
 
-.blue{
+.blue
+{
 	fill:blue;
 }
 
-.buttons{
+.buttons
+{
 	padding-left:270px;
 }
 
-.legendText{
+.legendText
+{
 	stroke:black;
 }

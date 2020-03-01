@@ -120,53 +120,6 @@
           .attr("selected",false)
           .on("click", function(d,i)
           {
-            d3.tsv("data/wdbc.tsv", function (error, dataProva)
-                  {
-                      dataProva.forEach(function(d)
-                        {
-                          d.radius = +d.radius;
-                          d.texture = +d.texture;
-                          d.perimeter = +d.perimeter;
-                          d.area = +d.area;
-                          d.smoothness = +d.smoothness;
-                          d.compactness = +d.compactness;
-                          d.concavity  = +d.concavity;
-                          d.concave_points = +d.concave_points;
-                          d.symmetry = +d.symmetry;
-                          d.fractal_dimension = +d.fractal_dimension;
-                          d.SE_texture = +d.SE_texture;
-                          d.SE_perimeter = +d.SE_perimeter;
-                          d.SE_area = +d.SE_area;
-                          d.SE_smoothness = +d.SE_smoothness;
-                          d.SE_compactness = +d.SE_compactness;
-                          d.SE_concavity = +d.SE_concavity;
-                          d.SE_concave_points = +d.SE_concave_points;
-                          d.SE_symmetry = +d.SE_symmetry;
-                          d.SE_fractal_dimension = +d.SE_fratcal_dimension;
-                          d.SE_radius = +d.SE_radius;
-                          d.W_radius = +d.W_radius;
-                          d.W_perimeter = +d.W_perimeter;
-                          d.W_area = +d.W_area;
-                          d.W_smoothness = +d.W_smoothness;
-                          d.W_compactness = +d.W_compactness;
-                          d.W_concavity = +d.W_concavity;
-                          d.W_concave_points = + d.W_concave_points;
-                          d.W_symmetry = +d.W_symmetry;
-                          d.W_fractal_dimension = + d.W_fractal_dimension;
-                          d.W_texture = + d.W_texture;
-                          appoggio.push([d.radius, d.texture, d.perimeter,d.area,
-                            d.smoothness, d.compactness, d.concavity, d.concave_points,
-                            d.symmetry, d.fractal_dimension, d.SE_radius, d.SE_texture, d.SE_perimeter,
-                            d.SE_area,d.SE_smoothness, d.SE_compactness, d.SE_concavity, d.SE_concave_points,
-                            d.SE_symmetry, d.SE_fractal_dimension, d.W_radius, d.W_texture, d.W_perimeter,d.W_area,
-                            d.W_smoothness, d.W_compactness, d.W_concavity, d.W_concave_points, d.W_symmetry, d.W_fractal_dimension])
-                        }
-                      );
-                    console.log("dataProva: ", dataProva);
-                    console.log("appoggio: ", appoggio);
-                  }
-                  )
-
                 if (d3.select(this).attr("selected") === "false")
                 {
                   if (refVector.length<2)

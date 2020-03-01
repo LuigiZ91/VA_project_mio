@@ -8,6 +8,6 @@ The project is arranged as follows:
 - data folder to contains all datasets (original and computed)
 - PY folder with Machine Learning programs and PCA reduction in Python language
 
-#Live demo
+# Live demo
 
 https://luigiz91.github.io/VA_project_mio/

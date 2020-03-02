@@ -11,3 +11,7 @@ The project is arranged as follows:
 # Live demo
 
 https://luigiz91.github.io/VA_project_mio/
+
+# Presentation slide
+
+https://www.slideshare.net/LuigiZollo/va-support-ml-229515223

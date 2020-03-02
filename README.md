@@ -7,6 +7,7 @@ The project is arranged as follows:
 - histogram.js for features selection
 - data folder to contains all datasets (original and computed)
 - PY folder with Machine Learning programs and PCA reduction in Python language
+- project's paper in PDF
 
 # Live demo
 
